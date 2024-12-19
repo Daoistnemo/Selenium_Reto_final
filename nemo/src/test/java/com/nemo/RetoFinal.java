@@ -167,7 +167,7 @@ public class RetoFinal {
         WebElement RemoveButton = driver.findElement(By.xpath("//*[@id='cart_contents_container']//div[contains(@class, 'cart_item')][1]//button[@class='btn_secondary cart_button']"));
         RemoveButton.click();
 
-        // Actualizar el cartBadge después de eliminar un producto
+        // Actualizar el cartBadge después de eliminar un producto ya que cambia al ser removido el producto
         cartBadge = driver.findElement(By.cssSelector("span.shopping_cart_badge"));
 
         // Verificar la cantidad de productos
